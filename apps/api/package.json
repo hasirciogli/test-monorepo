@@ -5,15 +5,15 @@
   "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "pnpx tsx src/index.ts",
+    "dev": "nodemon --exec tsx src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {
     "@test-monorepo/zapi": "workspace:*",
-    "@prisma/client": "latest",
-    "fastify": "latest"
+    "fastify": "latest",
+    "dotenv": "latest"
   },
   "workspaces": [
     "packages/*",

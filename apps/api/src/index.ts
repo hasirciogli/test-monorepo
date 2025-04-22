@@ -1,17 +1,19 @@
 import fastify from "fastify";
 // Fixing the import by using a relative path instead of the alias
 // Assuming the function is in a file like "../../../packages/zapi/index.ts"
-import { myApiFunction } from "@test-monorepo/zapi";
+import { prisma } from "@test-monorepo/db/src/index";
+import dotenv from "dotenv";
 
-myApiFunction();
+dotenv.config({ path: ".env" });
 
 const server = fastify({
-  logger: true,
+  logger: false,
 });
 
 // Hello route
-server.get("/hello", async (request, reply) => {
-  return { message: "Hello from Fastify!" };
+server.get("/test", async (request, reply) => {
+  const users = await prisma.user.findMany();
+  return { users };
 });
 
 const start = async () => {
