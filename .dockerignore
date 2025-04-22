@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Source maps
+*.map
+
+# TypeScript source files
+**/*.ts
+!**/*.d.ts
+
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# Build outputs
+dist
+.next
+out
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage
+
+# Turbo
+.turbo
+
+# Misc
+.DS_Store
+*.pem 
