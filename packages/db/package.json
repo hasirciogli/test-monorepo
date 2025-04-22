@@ -7,7 +7,9 @@
   "type": "commonjs",
   "scripts": {
     "postinstall": "pnpx prisma generate",
-    "build": "tsc && pnpm prisma migrate deploy",
+    "build": "tsc",
+    "migrate:deploy": "pnpx prisma migrate deploy",
+    "migrate:dev": "pnpx prisma migrate dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
