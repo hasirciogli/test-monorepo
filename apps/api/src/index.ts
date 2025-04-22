@@ -1,7 +1,7 @@
 import fastify from "fastify";
 // Fixing the import by using a relative path instead of the alias
 // Assuming the function is in a file like "../../../packages/zapi/index.ts"
-import { myApiFunction } from "@test-monorepo/zapi/src/index";
+import { myApiFunction } from "@test-monorepo/zapi";
 
 myApiFunction();
 

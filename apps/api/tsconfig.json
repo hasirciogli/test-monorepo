@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@test-monorepo/zapi/*": ["../../packages/zapi/dist/*"]
+      // "@test-monorepo/zapi/*": ["../../packages/zapi/dist/*"]
     }
   },
   "include": ["src/**/*"],

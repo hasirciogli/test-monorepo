@@ -5,6 +5,8 @@
   "packageManager": "pnpm@10.9.0",
   "scripts": {
     "dev": "turbo run dev --parallel",
+    "build:packages": "turbo run build --parallel --filter='./packages/*'",
+    "build:apps": "turbo run build --parallel --filter='./apps/*'",
     "build": "turbo run build --parallel",
     "start": "turbo run start --parallel",
     "lint": "turbo run lint --parallel",
